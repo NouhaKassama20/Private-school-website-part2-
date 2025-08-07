@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Alameed junior school</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com" rel="preconnect">
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+      <!-- Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet">
+
+      <!-- =======================================================
+      * Template Name: Mentor
+      * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+      * Updated: Aug 07 2024 with Bootstrap v5.3.3
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+      ======================================================== -->
+    </head>
+
+    <body class="index-page">
+
+
+        <!--Modifying header(logo and navbar)-->
+        <header id="header" class="header d-flex align-items-center sticky-top">
+          <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+              <a href="index.html" class="logo d-flex align-items-center me-auto">
+              <!-- Uncomment the line below if you also wish to use an image logo -->
+              <!-- <img src="assets/img/logo.png" alt=""> -->
+              <img src="assets/img/Myimages/logo.png" alt="Al Ameed Junior School Logo" style="max-height: 110px;"> 
+              <h1 class="sitename">Al Ameed Junior School</h1>
+              </a>
+      
+              <!-- Navigation bar of the website -->
+              <nav id="navmenu" class="navmenu">
+              <ul>
+                  <li><a href="index.html">Home<br></a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="courses.html">academics</a></li>
+                  <li><a href="Admission.html" class="active">admissions</a></li>
+                  <li><a href="contact.html">Contact</a></li> 
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+      
+              <a class="btn-getstarted" href="courses.html">Get Started</a>
+      
+          </div>
+        </header>
+
+        <main class="main">
+
+            <!-- Page Title -->
+            <div class="page-title" data-aos="fade">
+              <div class="heading">
+                <div class="container">
+                  <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                      <h1>Admissions<br></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="breadcrumbs">
+                <div class="container">
+                  <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current">Admissions<br></li>
+                  </ol>
+                </div>
+              </nav>
+            </div><!-- End Page Title -->
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact section">
+        
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+                    <div class="row gy-6">
+            
+                        <!--Location and contact information-->
+                        <div class="col-lg-4">
+                                <div>
+                                <h3>Are you ready to unlock your potential?</h3>
+                                <p>Fill the formular to registre your child and let him/her start his/her learning adventure.</p>
+                                </div>
+                        </div>    
+                    
+        
+                        <div class="col-lg-8">
+                            <form class="row g-3 needs-validation" novalidate action="forms/insertion.php" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                                <!--Uploading an identity picture:-->
+                                <div class="col-md-4">
+                                    <label for="image-upload" class="upload-label">Upload an Image:</label>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <input type="file" id="image-upload" name="image" accept="image/*" onchange="previewImage(event)">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="image-preview-container">
+                                        <img id="image-preview" src="" alt="Image Preview" class="image-preview" class="img-thumbnail">
+                                    </div>
+                                </div>
+                                <!-- end of uploading -->
+
+
+                                <div class="col-md-4">
+                                  <label for="validationCustom01" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="validationCustom01" name="firstname" value="Mark" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationCustom02" class="form-label">Last name</label>
+                                  <input type="text" class="form-control" id="validationCustom02" name="lastname" value="Otto" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationCustomUsername" class="form-label">Email</label>
+                                  <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername"  name="email" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                      Please pick an email.
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                  <label for="validationCustom03" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="validationCustom03" name="city" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationCustom04" class="form-label">State</label>
+                                  <select class="form-select" id="validationCustom04" name="state" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Algeria</option>
+                                    <option>England</option>
+                                    <option>French</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a valid state.
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationCustom05" class="form-label">Phone number</label>
+                                  <input type="text" class="form-control" id="validationCustom05" name="phonenumber" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid Phone Number.
+                                  </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group"></div>
+                                        <label>Choisissez votre langue préférée :</label><br>
+                                        <input type="radio" name="language" value="English" id="english-radio" onclick="handleRadioChange('English')"> English<br>
+                                        <input type="radio" name="language" value="French" id="french-radio" onclick="handleRadioChange('French')"> French<br>
+                                        <input type="radio" name="language" value="Other" id="other-radio" onclick="handleRadioChange('Other')"> 
+                                        <label id="other-label">Other</label>
+                                    </div>
+
+                                    <!-- Champ caché pour entrer la langue personnalisée -->
+                                    <div id="custom-language-input" class="hidden-input">
+                                        <label for="preferred-language">Entrez votre langue préférée :</label>
+                                        <input type="text" id="preferred-language" placeholder="Votre langue" oninput="updateOtherLabel()">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                      Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-12">
+                                  <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+
+                            </form>
+                        </div><!-- End Contact Form -->
+                        <!--uploading functionality -->
+                        <script>
+                            function previewImage(event) {
+                                const input = event.target;
+                                const preview = document.getElementById('image-preview');
+                                const container = document.querySelector('.image-preview-container');
+                    
+                                if (input.files && input.files[0]) {
+                                    const reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        preview.src = e.target.result; // Set the image source
+                                        preview.style.display = 'block'; // Make the image visible
+                                        container.style.border = '2px solid '; // Highlight the container
+                                    };
+                                    reader.readAsDataURL(input.files[0]);
+                                } else {
+                                    preview.src = '';
+                                    preview.style.display = 'none';
+                                    container.style.border = '2px dashed #ddd';
+                                }
+                            }
+
+                            // Fonction pour gérer le changement de radio
+                            function handleRadioChange(value) {
+                                const customInput = document.getElementById('custom-language-input');
+                                const preferredLanguage = document.getElementById('preferred-language');
+
+                                if (value === 'Other') {
+                                    customInput.style.display = 'block'; // Affiche le champ de saisie
+                                    preferredLanguage.focus(); // Met le focus sur le champ
+                                } else {
+                                    customInput.style.display = 'none'; // Cache le champ de saisie
+                                    document.getElementById('other-label').textContent = 'Other'; // Réinitialise le label
+                                }
+                            }
+
+                            // Fonction pour mettre à jour le label "Other"
+                            function updateOtherLabel() {
+                                const preferredLanguage = document.getElementById('preferred-language').value;
+                                const otherLabel = document.getElementById('other-label');
+
+                                if (preferredLanguage.trim() !== '') {
+                                    otherLabel.textContent = preferredLanguage; // Met à jour le label avec la langue entrée
+                                } else {
+                                    otherLabel.textContent = 'Other'; // Réinitialise si le champ est vide
+                                }
+                            }
+                        </script>
+                    </div>    
+        
+                </div>
+            </section><!-- /Contact Section -->
+        
+        </main>
+                  
+                    
+          
+
+        <!--footer section -->
+        <footer id="footer" class="footer position-relative light-background">
+
+            <div class="container footer-top">
+            <div class="row gy-4">
+
+                <!--Footer's first devision-->
+                <div class="col-lg-4 col-md-6 footer-about">
+                <!--Location information and contact-->
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">Al Ameed junior school</span>
+                </a>
+                <div class="footer-contact pt-3">
+                    <p>Rue Sidi Bouyahia N3 Mila (En face polyclinique Dar E'safara), Mila, Algerie</p>
+                    <p>Algeria</p>
+                    <p class="mt-3"><strong>Phone:</strong> <span>+213 550 55 58 59</span></p>
+                    <p><strong>Email:</strong> <span>elameedmila@gmail.com</span></p>
+                </div>
+                <!--Social media links--> 
+                <div class="social-links d-flex mt-4">
+                    <a href="https://www.instagram.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/el_ameed_institute?igsh=MXA3NTc1N3QzMml5NA=="><i class="bi bi-instagram"></i></a>
+                </div>
+                </div>
+
+                <!--Footer's second devision-->
+                <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">courses</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Science </a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Visual Arts</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Languages</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+            <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Al Ameed junior school</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+            </div>
+
+        </footer>
+
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>  

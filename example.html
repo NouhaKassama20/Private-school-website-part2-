@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Effect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .btn-getstarted {
+            /* Base styles for the button */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .btn-getstarted:hover {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <a class="btn-getstarted" href="courses.html">Get Started</a>
+
+    <script>
+        $(document).ready(function() {
+            $(".btn-getstarted").hover(function() {
+                $(this).addClass("hover");
+            }, function() {
+                $(this).removeClass("hover");
+            });
+        });
+    </script>
+</body>
+</html>
